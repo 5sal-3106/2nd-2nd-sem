@@ -1,0 +1,16 @@
+INTRO TO DATA WAREHOUSE
+A data warehouse is a centralized repository for storing and managing large amounts of data from various sources for analysis and reporting. It is optimized for fast querying and analysis, enabling organizations to make informed decisions by providing a single source of truth for data. Data warehousing typically involves transforming and integrating data from multiple sources into a unified, organized, and consistent format.
+.
+It is designed to support business intelligence (BI) and reporting activities by providing a unified view of data for analysis and decision-making.
+CHARACTERISTICS:
+Integrated: Data warehouses integrate data from various sources within an organization, such as operational systems, databases, and external sources. It ensures that data is standardized and consistent across different systems, eliminating data silos and providing a unified view of information.
+
+Subject-Oriented: Data warehouses are organized around specific subject areas or domains that are relevant to the organization's business operations. For example, a subject area could be sales, marketing, finance, or customer data. This subject-oriented structure allows users to focus on specific data that is meaningful for their analysis and reporting needs.
+
+Time-Variant: Data warehouses capture and store historical data over time. This time-variant nature enables users to analyze trends, track changes, and compare performance over specific time periods. By storing historical data, data warehouses facilitate historical analysis and support decision-making based on long-term trends.
+
+Non-Volatile: Data in a data warehouse is non-volatile, meaning it is read-only and remains unchanged once it is loaded into the warehouse. This ensures data integrity and consistency for analysis purposes. Operational systems, on the other hand, are designed to handle real-time data updates, while data warehouses focus on providing a stable and reliable environment for analysis.
+
+Optimized for Querying: Data warehouses are designed and optimized for complex queries and analytical processing. They employ techniques such as indexing, partitioning, and pre-aggregations to enhance query performance and provide fast access to large volumes of data. This optimization enables users to retrieve and analyze data efficiently, even when dealing with complex queries and extensive data sets
+.
+.
