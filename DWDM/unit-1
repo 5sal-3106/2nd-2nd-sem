@@ -1,8 +1,8 @@
-INTRO TO DATA WAREHOUSE
+INTRO TO DATA WAREHOUSE 🙌
 A data warehouse is a centralized repository for storing and managing large amounts of data from various sources for analysis and reporting. It is optimized for fast querying and analysis, enabling organizations to make informed decisions by providing a single source of truth for data. Data warehousing typically involves transforming and integrating data from multiple sources into a unified, organized, and consistent format.
 .
 It is designed to support business intelligence (BI) and reporting activities by providing a unified view of data for analysis and decision-making.
-CHARACTERISTICS:
+CHARACTERISTICS:🙌
 Integrated: Data warehouses integrate data from various sources within an organization, such as operational systems, databases, and external sources. It ensures that data is standardized and consistent across different systems, eliminating data silos and providing a unified view of information.
 
 Subject-Oriented: Data warehouses are organized around specific subject areas or domains that are relevant to the organization's business operations. For example, a subject area could be sales, marketing, finance, or customer data. This subject-oriented structure allows users to focus on specific data that is meaningful for their analysis and reporting needs.
@@ -13,4 +13,108 @@ Non-Volatile: Data in a data warehouse is non-volatile, meaning it is read-only 
 
 Optimized for Querying: Data warehouses are designed and optimized for complex queries and analytical processing. They employ techniques such as indexing, partitioning, and pre-aggregations to enhance query performance and provide fast access to large volumes of data. This optimization enables users to retrieve and analyze data efficiently, even when dealing with complex queries and extensive data sets
 .
+DATA WAREHOUE ARTITECTURE:🙌
+Data Warehouse Architecture
+The single tier Data Warehouse architecture is composed of a single hardware layer. This hardware layer is composed of a single hardware layer. There are three approaches to creating a data warehouse layer: Single tier, two-tier, and three-tier.
+
+Single-tier architecture: A single-layer structure aimed at keeping data space minimal. This structure is rarely used in real life.
+.
+Data warehouse is the aggregation of data in a format that is easy to transform and load into a database. Data warehouses can be implemented in a number of different ways, and it is important to pick the right one for your business needs. The most important thing to consider is scalability. If you want to store large amounts of data in a small amount of space, then you should consider using a data warehouse.
+
+Three-Tier Data Warehouse Architecture: The Top, Middle, and Bottom Tiers of this Architecture of Data Warehouse are collectively referred to as the Top Tier.
+
+The bottom tier of the Datawarehouse is a relational database system. This database system typically contains a relational database system. Back-end tools clean, transform, and load data into this layer.
+A middle tier OLAP server is either ROLAP or MOLAP-based. It abstracts OLAP from the end user by serving as a middle tier OLAP server. Data warehouses that facilitate end-user interaction with the database and middle tier OLAP servers that abstract OLAP from the end user are known as middle tier OLAP servers.
+The front-end client layer of the top-tier is important because it is the first point of interaction with the data. It is where data is presented to the end user, and decisions are made with the data. The front-end client layer of top-tier must work with real-time data and must be able to process data quickly. It is also important to work with data that is in a format that top-tier can understand and use. Typically, top-tier data is in a relational database format, but it could be a file or a stream. Top-tier data must be well-structured, must be validated, and must be structured in a way that allows for easier data profiling and analytics.
+.
+There are different types of data warehouse architectures, each with its own approach to storing and managing data. Here are three commonly used architectures:
+
+Single-Tier Architecture: In this architecture, all the components of a data warehouse—such as data extraction, transformation, loading, storage, and presentation—are implemented on a single server or system. This approach is suitable for small-scale data warehouses or when the data volume and complexity are relatively low. However, it may lack scalability and can pose performance challenges as the data warehouse grows.
+
+Two-Tier Architecture: This architecture separates the data warehouse into two tiers: the back-end server and the front-end client tools. The back-end server is responsible for data storage, management, and processing, including ETL operations. The front-end client tools provide a user interface for querying, reporting, and data analysis. This architecture allows for a clearer separation of concerns, better performance, and easier scalability.
+
+Three-Tier Architecture: The three-tier architecture separates the data warehouse into three layers: the data source layer, the data warehouse layer, and the presentation layer.
+
+Data Source Layer: This layer represents the various sources of data, such as operational databases, external systems, or flat files. Data is extracted from these sources and transformed into a suitable format for loading into the data warehouse.
+
+Data Warehouse Layer: This layer consists of the data warehouse itself, which stores the integrated and transformed data. It includes components for data storage, management, indexing, and optimization. The data warehouse layer is responsible for performing complex queries, aggregations, and maintaining data consistency.
+
+Presentation Layer: The presentation layer provides user interfaces, reporting tools, and analytical capabilities for end-users to access and interact with the data warehouse. This layer includes reporting applications, dashboards, OLAP (Online Analytical Processing) tools, and data visualization tools.
+
+The three-tier architecture offers a scalable and flexible approach, as each layer can be scaled independently. It also provides better performance by distributing the workload across different tiers and allows for easier integration with other systems..
+.
+.
+COMPONENTS OF DW:🙌
+Data Sources: Data warehouses integrate data from various sources, such as operational databases, external systems, spreadsheets, and flat files. These sources provide the raw data that is transformed, cleansed, and loaded into the data warehouse.
+
+ETL (Extract, Transform, Load) Processes: ETL processes extract data from the source systems, transform it into a consistent and compatible format, and load it into the data warehouse. This involves data cleansing, data integration, data quality checks, and data transformation operations.
+
+Data Storage: Data warehouses store the integrated and transformed data. They use a database management system optimized for analytical processing, such as a relational database or a columnar database. The data is structured and organized to support efficient querying and analysis.
+
+Metadata Management: Metadata refers to the information about the data in the warehouse, such as data definitions, data sources, data transformations, and relationships between tables. Metadata management involves capturing, storing, and managing this information to ensure data lineage, data quality, and facilitate data discovery.
+
+Data Access and Querying: Data warehouses provide mechanisms for users to access and query the data. This includes SQL-based querying, online analytical processing (OLAP) tools, reporting tools, and data visualization tools. These components enable users to retrieve and analyze data to derive insights and make data-driven decisions.
+
+Security and Data Governance: Data warehouses implement security measures to protect sensitive data and ensure authorized access. They also incorporate data governance practices to define data ownership, access controls, data privacy policies, and data quality standards.
+
+Data Presentation and Visualization: Data warehouses support the presentation and visualization of data through various tools and interfaces. This includes reporting tools, dashboards, data exploration tools, and data visualization tools that help users analyze and interpret the data effectively.
+.
+.
+SCHEMA IN DWDW🙌
+Schema is a logical description of the entire database. It includes the name and description of records of all record types including all associated data-items and aggregates. Much like a database, a data warehouse also requires to maintain a schema. A database uses relational model, while a data warehouse uses Star, Snowflake, and Fact Constellation schema. In this chapter, we will discuss the schemas used in a data warehouse.
+.
+Star Schema:-
+The star schema is the simplest data warehouse schema. It is called star schema because the structure of star schema resembles a  star, with points radiating from the center. The center of the star consists of one or more fact tables and the point of the stars are the dimension or look up  tables.
+
+Usually the fact table which contains the primary information in the data warehouse,  is surrounding by the much smaller dimension lookup tables which contains the information about the entries for a particular attribute in the fact table. The primary key in each dimension table is related to a foreign key in the fact table.
+.
+For an example, suppose our data warehouse keeps store sales data, and the different dimensions are store, product, time and region. In this case the above diagram represent the star schema. The line between two table represents the primary key/ foreign key relationship between two tables. You can see that dimension tables are not related to each other.
+
+Fact Tables- A typical fact table contains two types of attributes: foreign keys to dimension tables and measures. For example sales fact table may contain sales quantity, sales cost etc.
+
+Dimension tables – Dimension tables contain descriptive attribute that are mainly textual data. Dimension table rows are uniquely identified by a single key field. In our above example region dimension attributes can be region_id, region_name. Here each region will be uniquely identified by the region_id.
+.
+Snowflake Schema:-
+Snowflake schema is an extension of star schema means it is more complex than star schema. It is called as a snowflake schema the diagram resembles a snowflake. In star schema each dimension is represented by a single dimension table whereas in snowflake schema each dimension is grouped into multiple lookup table to eliminate the redundancy.
+.
+For example, The product dimension can be normalized into a product table, a product category table in snowflake schema. Time dimension can be normalized into a quarter and a month table.
+
+The main advantage of the snowflake schema is the improvement in query performance due to minimized disk storage requirements and joining smaller lookup tables. The main disadvantage of the snowflake schema is the additional maintenance efforts needed due to the increase number of lookup tables.
+.
+Fact Constellation is a schema for representing multidimensional model. It is a collection of multiple fact tables having some common dimension tables. It can be viewed as a collection of several star schemas and hence, also known as Galaxy schema. It is one of the widely used schema for Data warehouse designing and it is much more complex than star and snowflake schema. For complex systems, we require fact constellations..
+.
+.
+MULTI DIMENSIONAL DATA MODEL AND OLAP🙌
+A multidimensional data model is a conceptual representation of data in a data warehouse that organizes information in a way that facilitates efficient analysis and reporting. It is designed to support complex queries and provide a multidimensional view of data, allowing users to analyze data from different perspectives.
+
+The multidimensional data model is based on the concept of a data cube, which represents data in multiple dimensions. Here are the key components of the multidimensional data model:
+
+Dimensions: Dimensions represent the characteristics or attributes by which data is analyzed. They provide the context for analyzing the measures in a data warehouse. Examples of dimensions can include time, geography, product, customer, or any other relevant aspect of the business. Each dimension has a hierarchical structure with levels that allow drill-down or roll-up analysis.
+
+Measures: Measures, also known as facts, are the numeric values that represent the quantitative data being analyzed. Examples of measures can include sales revenue, quantity sold, profit, or any other measurable value. Measures are typically associated with dimensions, and they provide the data points that are analyzed and aggregated in a multidimensional model.
+
+Cubes: Cubes are the central concept of the multidimensional data model. They represent the collection of data organized in multiple dimensions. Each cell within the cube represents a combination of dimension values and contains the corresponding measure value. The cube structure allows users to slice, dice, and drill down into the data to analyze it from different dimensions and perspectives.
+
+Hierarchies: Hierarchies define the relationships between levels within a dimension. For example, a time dimension can have levels such as year, quarter, month, and day. Hierarchies allow users to perform drill-down or roll-up operations to navigate through the data at different levels of granularity within a dimension.
+
+Aggregation: Aggregation involves summarizing or consolidating data at different levels of the dimensional hierarchy. Aggregations allow for faster query performance by precomputing and storing summarized data in the data warehouse. This enables users to analyze large volumes of data efficiently.
+
+The multidimensional data model provides a user-friendly and intuitive way to explore and analyze data in a data warehouse. It allows users to perform complex analysis, create reports, and gain insights by examining data from different dimensions and levels of granularity. The model's structure and organization facilitate faster query performance and support decision-making processes within organizations.
+.
+OLAP (Online Analytical Processing): OLAP is a type of multidimensional data model that supports fast and efficient querying of large datasets. OLAP systems are designed to handle complex queries and provide fast response times.
+.
+OLAP SERVERS 🙌
+https://www.geeksforgeeks.org/olap-servers/
+.
+.
+MEASURES OF FACT TABLE 🙌
+The measures in a fact table can be one of the following types:
+Additive
+Additive measures are measures that can be aggregated across all of the dimensions in the fact table, and are the most common type of measure. Additive measures are used across several dimensions for summation purposes.
+Since dimensional modeling involves hierarchies in dimensions, aggregation of information over different members in the hierarchy is a key element in the usefulness of the model. Since aggregation is an additive process, use additive measures as much as possible.
+
+Semi-additive
+Semi-additive measures can be aggregated across some dimensions, but not all dimensions. For example, measures such as head counts and inventory are considered semi-additive.
+Non-additive
+Non-additive measures are measures that cannot be aggregated across any of the dimensions. These measures cannot be logically aggregated between records or fact rows. Non-additive measures are usually the result of ratios or other mathematical calculations. The only calculation that can be made for such a measure is to get a count of the number of rows of such measures..
 .
