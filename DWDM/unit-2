@@ -1,0 +1,64 @@
+DATA MINING🙌
+What is Data Mining?
+Data mining is the process of extracting knowledge or insights from large amounts of data using various statistical and computational techniques. The data can be structured, semi-structured or unstructured, and can be stored in various forms such as databases, data warehouses, and data lakes.
+
+The primary goal of data mining is to discover hidden patterns and relationships in the data that can be used to make informed decisions or predictions. This involves exploring the data using various techniques such as clustering, classification, regression analysis, association rule mining, and anomaly detection.
+
+Data mining has a wide range of applications across various industries, including marketing, finance, healthcare, and telecommunications. For example, in marketing, data mining can be used to identify customer segments and target marketing campaigns, while in healthcare, it can be used to identify risk factors for diseases and develop personalized treatment plans.
+However, data mining also raises ethical and privacy concerns, particularly when it involves personal or sensitive data. It’s important to ensure that data mining is conducted ethically and with appropriate safeguards in place to protect the privacy of individuals and prevent misuse of their data.
+CHARACTERISTICS 🙌
+Pattern Discovery: Data mining algorithms can identify hidden patterns and relationships within the data that may not be readily apparent. By uncovering these patterns, organizations can gain valuable insights into customer behavior, market trends, and other factors that can drive strategic decision-making.
+
+Decision Support: Data mining provides decision support by offering predictive analytics capabilities. By analyzing historical data, data mining algorithms can predict future trends and outcomes. This information helps organizations make informed decisions, optimize resource allocation, and identify potential risks and opportunities.
+
+Customer Segmentation and Targeting: Data mining allows organizations to segment their customer base based on various attributes and behaviors. This segmentation enables targeted marketing and personalized customer experiences. By understanding customer preferences and needs, organizations can tailor their products, services, and marketing strategies to specific customer segments, increasing customer satisfaction and loyalty.
+
+Improved Business Efficiency: Data mining helps optimize business processes and resource allocation by identifying inefficiencies, bottlenecks, and areas for improvement. By analyzing operational data, organizations can identify patterns and factors that impact productivity and efficiency. This information can be used to streamline operations, reduce costs, and enhance overall business performance.
+
+Fraud Detection and Risk Management: Data mining techniques can detect anomalous patterns and outliers in large datasets, helping organizations identify potential fraudulent activities or risks. By analyzing historical data and identifying suspicious patterns, data mining algorithms can flag potential fraud cases or assess the likelihood of risks, enabling proactive measures to mitigate such issues.
+
+Market and Competitive Analysis: Data mining enables organizations to analyze market trends, competitor activities, and consumer preferences. By examining large datasets, organizations can gain insights into market demand, product performance, and competitive strategies. This information can be used to develop effective marketing campaigns, optimize pricing strategies, and gain a competitive edge.
+
+Research and Innovation: Data mining aids in research and innovation by exploring relationships and uncovering insights that may not be evident through traditional analysis methods. It helps researchers discover new patterns, validate hypotheses, and generate new knowledge in various fields such as healthcare, finance, and scientific research.
+
+Improved Customer Experience: By leveraging data mining techniques, organizations can understand customer behavior, preferences, and satisfaction levels. This understanding enables the customization of products and services, personalized recommendations, and targeted marketing campaigns. Ultimately, it enhances the overall customer experience and builds stronger customer relationships.
+.
+.
+.
+KDD Process 🙌
+KDD (Knowledge Discovery in Databases) is a process that involves the extraction of useful, previously unknown, and potentially valuable information from large datasets. The KDD process is an iterative process and it requires multiple iterations of the above steps to extract accurate knowledge from the data.The following steps are included in KDD process: 
+
+Data Cleaning
+Data cleaning is defined as removal of noisy and irrelevant data from collection. 
+
+Cleaning in case of Missing values.
+Cleaning noisy data, where noise is a random or variance error.
+Cleaning with Data discrepancy detection and Data transformation tools.
+Data Integration
+Data integration is defined as heterogeneous data from multiple sources combined in a common source(DataWarehouse). Data integration using Data Migration tools, Data Synchronization tools and ETL(Extract-Load-Transformation) process.
+
+Data Selection
+Data selection is defined as the process where data relevant to the analysis is decided and retrieved from the data collection. For this we can use  Neural network, Decision Trees, Naive bayes, Clustering, and Regression methods. 
+
+Data Transformation
+Data Transformation is defined as the process of transforming data into appropriate form required by mining procedure. Data Transformation is a two step process: 
+
+Data Mapping: Assigning elements from source base to destination to capture transformations.
+Code generation: Creation of the actual transformation program.
+Data Mining
+Data mining is defined as techniques that are applied to extract patterns potentially useful. It transforms task relevant data into patterns, and decides purpose of model using classification or characterization.
+
+Pattern Evaluation
+Pattern Evaluation is defined as identifying strictly increasing patterns representing knowledge based on given measures. It find interestingness score of each pattern, and uses summarization and Visualization to make data understandable by user.
+
+Knowledge Representation
+This involves presenting the results in a way that is meaningful and can be used to make decisions.
+.
+.
+Tasks and Functionalities of Data Mining 🙌
+https://www.geeksforgeeks.org/tasks-and-functionalities-of-data-mining/
+.
+.
+data preprocessing , data cleaning, data transformation, data reduction 🙌
+https://www.geeksforgeeks.org/data-preprocessing-in-data-mining/
+.
