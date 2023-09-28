@@ -1,0 +1,19 @@
+Difference between AES and DES🙌
+ChatGPT
+AES (Advanced Encryption Standard) and DES (Data Encryption Standard) are both symmetric encryption algorithms used to secure data. However, they differ in several aspects:
+
+Key Size: AES supports key sizes of 128, 192, and 256 bits, while DES uses a fixed key size of 56 bits. The larger key sizes in AES provide stronger security against brute-force attacks.
+
+Security: AES is considered more secure than DES. DES has been deprecated due to its relatively small key size, making it vulnerable to brute-force attacks. In contrast, AES has undergone extensive analysis and has proven to be highly resistant to cryptographic attacks.
+
+Block Size: AES operates on 128-bit blocks, whereas DES works on 64-bit blocks. AES's larger block size provides better security and makes it more suitable for modern applications.
+
+Key Expansion: AES expands its key using a key schedule algorithm, which generates a series of round keys used in the encryption process. DES, on the other hand, generates its subkeys directly from the main key.
+
+Number of Rounds: AES has a variable number of rounds depending on the key size: 10 rounds for 128-bit keys, 12 rounds for 192-bit keys, and 14 rounds for 256-bit keys. DES uses a fixed number of 16 rounds for all key sizes.
+Algorithm Structure: AES uses a substitution-permutation network (SPN) structure, which involves several rounds of substitution and permutation operations. DES, on the other hand, uses a Feistel network structure, where the plaintext is divided into two halves and processed through a series of rounds.
+
+Speed and Efficiency: AES is generally faster and more efficient in terms of encryption and decryption compared to DES. This is partly due to AES's parallelizable operations, which allow for faster processing on modern hardware. DES, with its smaller block size and fixed key size, can be relatively slower in comparison.
+Compatibility: AES is a widely supported encryption standard and is compatible with various platforms, programming languages, and cryptographic libraries. DES, being an older algorithm, may have limited compatibility with modern systems, and its usage is gradually being phased out.
+
+Standardization: AES has been adopted as a standard by the U.S. National Institute of Standards and Technology (NIST) and is used worldwide. DES was also a standard in the past but has been largely superseded by AES due to its vulnerabilities.
