@@ -1,0 +1,101 @@
+anonymous and fruitful function 🙌
+In Python, there are two types of functions: anonymous functions (also known as lambda functions) and fruitful functions.
+
+Anonymous Functions (Lambda Functions):
+An anonymous function is a function that is defined without a name. They are created using the lambda keyword, and typically used for small and simple operations. Lambda functions can take any number of arguments but can only have a single expression. They are often used as arguments to higher-order functions or in situations where a small function is required momentarily.
+Example:
+
+python
+Copy code
+# Example 1: Squaring a number using a lambda function
+square = lambda x: x ** 2
+result = square(5)
+print(result)  # Output: 25
+
+# Example 2: Sorting a list of tuples based on the second element
+my_list = [(2, 5), (1, 3), (4, 1)]
+sorted_list = sorted(my_list, key=lambda x: x[1])
+print(sorted_list)  # Output: [(4, 1), (1, 3), (2, 5)]
+In the first example, a lambda function is used to define a function that squares a number. The lambda function is assigned to the variable square, and it takes an argument x and returns the square of x. The function is then called with the argument 5, resulting in a value of 25.
+
+In the second example, a lambda function is used as the key parameter in the sorted() function. The lambda function takes a tuple x and returns the second element of the tuple. This lambda function is used to sort the list of tuples based on their second elements, resulting in [(4, 1), (1, 3), (2, 5)].
+
+Fruitful Functions:
+A fruitful function is a function that returns a value. It performs a specific task and provides a result or output. These functions can have multiple parameters, perform computations, and return a value using the return statement.
+Example:
+
+python
+Copy code
+# Example 1: Addition function
+def add_numbers(a, b):
+    return a + b
+
+result = add_numbers(3, 5)
+print(result)  # Output: 8
+
+# Example 2: Factorial function
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+result = factorial(5)
+print(result)  # Output: 120
+In the first example, the add_numbers() function takes two arguments a and b and returns their sum using the return statement.
+
+In the second example, the factorial() function calculates the factorial of a given number n using recursion. If n is either 0 or 1, the function returns 1. Otherwise, it recursively calls itself with the argument n - 1 and multiplies the result by n before returning it.
+
+Both these examples demonstrate fruitful functions that perform specific computations and return the results, which can be stored in variables or used directly in further operations.
+.
+.
+.
+STRING METHODS 🙌
+explain isupper,upper,lower,len string methods in python
+ChatGPT
+In Python, strings are objects that come with several built-in methods for various operations. Here are explanations of four commonly used string methods: isupper(), upper(), lower(), and len().
+
+isupper(): The isupper() method checks whether all characters in a string are uppercase letters. It returns True if all characters are uppercase, and False otherwise.
+Example:
+
+python
+Copy code
+text = "HELLO"
+print(text.isupper())  # Output: True
+
+text = "Hello"
+print(text.isupper())  # Output: False
+In the first example, the string "HELLO" consists of uppercase letters only, so isupper() returns True. In the second example, the string "Hello" contains lowercase letters, so isupper() returns False.
+
+upper(): The upper() method converts all characters in a string to uppercase. It returns a new string with all uppercase letters.
+Example:
+
+python
+Copy code
+text = "hello"
+print(text.upper())  # Output: HELLO
+In the example, the upper() method is called on the string "hello". The method converts all lowercase letters to uppercase, resulting in the string "HELLO".
+
+lower(): The lower() method converts all characters in a string to lowercase. It returns a new string with all lowercase letters.
+Example:
+
+python
+Copy code
+text = "HELLO"
+print(text.lower())  # Output: hello
+In the example, the lower() method is called on the string "HELLO". The method converts all uppercase letters to lowercase, resulting in the string "hello".
+
+len(): The len() function returns the length of a string, i.e., the number of characters in the string.
+Example:
+
+python
+Copy code
+text = "Hello, World!"
+print(len(text))  # Output: 13
+In the example, the len() function is used to determine the length of the string "Hello, World!". The function returns the value 13 because the string contains 13 characters, including spaces and punctuation.
+
+These string methods and the len() function provide useful tools for manipulating and analyzing strings in Python.
+.
+.
+PYTHON FUNCTIONS 🙌
+https://www.w3schools.com/python/python_functions.asp
