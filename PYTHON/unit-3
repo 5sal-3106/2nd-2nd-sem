@@ -1,0 +1,213 @@
+REGULAR EXPRESSION 🙌
+https://www.w3schools.com/python/python_regex.asp
+.
+DIFF B/W OOP AND PROCEDURAL LANG🙌
+https://www.geeksforgeeks.org/differences-between-procedural-and-object-oriented-programming/
+.
+SPECIAL SYMBOLS🙌
+Certainly! Here are some examples of how these special symbols can be used in Python:
+
+. - any character except new line character:
+python
+Copy code
+import re
+
+text = "Hello World!"
+pattern = r"H.llo"
+matches = re.findall(pattern, text)
+print(matches)  # Output: ['Hello']
+In this example, the . symbol in the regular expression H.llo matches any character in place of the dot. So, it will match the word "Hello" in the given text.
+
+^ - beginning of line:
+python
+Copy code
+import re
+
+text = "Hello World!"
+pattern = r"^Hello"
+matches = re.findall(pattern, text)
+print(matches)  # Output: ['Hello']
+In this example, the ^ symbol in the regular expression ^Hello matches the beginning of the line. So, it will match the word "Hello" only if it appears at the start of the given text.
+
+$ - end of line:
+python
+Copy code
+import re
+
+text = "Hello World!"
+pattern = r"World!$"
+matches = re.findall(pattern, text)
+print(matches)  # Output: ['World!']
+In this example, the $ symbol in the regular expression World!$ matches the end of the line. So, it will match the word "World!" only if it appears at the end of the given text.
+
+[abc] - any symbol in square brackets:
+python
+Copy code
+import re
+
+text = "apple banana cherry"
+pattern = r"[aeiou]"
+matches = re.findall(pattern, text)
+print(matches)  # Output: ['a', 'e', 'a', 'a', 'e']
+In this example, the regular expression [aeiou] matches any vowel character (a, e, i, o, or u) present in the given text.
+
+[^abc] - any symbol except those in square brackets:
+python
+Copy code
+import re
+
+text = "apple banana cherry"
+pattern = r"[^aeiou ]"
+matches = re.findall(pattern, text)
+print(matches)  # Output: ['p', 'p', 'l', 'b', 'n', 'n', ' ', 'c', 'h', 'r', 'r', 'y']
+In this example, the regular expression [^aeiou ] matches any character that is not a vowel (a, e, i, o, or u) or a space in the given text.
+
+a|b - element a or b:
+python
+Copy code
+import re
+
+text = "apple banana cherry"
+pattern = r"apple|banana"
+matches = re.findall(pattern, text)
+print(matches)  # Output: ['apple', 'banana']
+In this example, the regular expression apple|banana matches either the word "apple" or the word "banana" in the given text.
+.
+.
+DIFF B/W ERROR AND EXCEPTION🙌
+https://www.differencebetween.info/difference-between-error-and-exception
+.
+.
+EXCEPTION, TYPES, USED DEFINED EXCEPTIONS🙌
+https://www.programiz.com/python-programming/user-defined-exception
+.
+.
+multiple inheritance🙌
+# Define a base class
+class Parent1:
+    def method1(self):
+        print("Method 1 from Parent1")
+
+# Define another base class
+class Parent2:
+    def method2(self):
+        print("Method 2 from Parent2")
+
+# Create a derived class that inherits from both Parent1 and Parent2
+class Child(Parent1, Parent2):
+    def method3(self):
+        print("Method 3 from Child")
+
+# Create an instance of Child
+child_instance = Child()
+
+# Call methods from both parent classes and the derived class
+child_instance.method1()  # Calls Parent1's method1
+child_instance.method2()  # Calls Parent2's method2
+child_instance.method3()  # Calls Child's method3
+.
+Method 1 from Parent1
+Method 2 from Parent2
+Method 3 from Child
+.
+.
+single inheritance🙌
+class parent:
+    def method1(self):
+       print("method from parent")   
+class child(parent):
+    def method3(self):
+       print("method from child")    
+child_instance=child()    
+child_instance.method1()
+child_instance.method3()
+.
+method from parent1
+method from child
+.
+.
+multi level inheritance.🙌
+# Define a base class
+class Grandparent:
+    def method1(self):
+        print("Method 1 from Grandparent")
+
+# Define a derived class that inherits from Grandparent
+class Parent(Grandparent):
+    def method2(self):
+        print("Method 2 from Parent")
+
+# Define another derived class that inherits from Parent
+class Child(Parent):
+    def method3(self):
+        print("Method 3 from Child")
+
+# Create an instance of Child
+child_instance = Child()
+
+# Call methods from all three classes
+child_instance.method1()  # Calls Grandparent's method1
+child_instance.method2()  # Calls Parent's method2
+child_instance.method3()  # Calls Child's method3
+.
+Method 1 from Grandparent
+Method 2 from Parent
+Method 3 from Child
+.
+HIREARTICAL 🙌
+# Define a base class
+class Parent:
+    def method1(self):
+        print("Method 1 from Parent")
+
+# Define two derived classes that inherit from Parent
+class Child1(Parent):
+    def method2(self):
+        print("Method 2 from Child1")
+
+class Child2(Parent):
+    def method3(self):
+        print("Method 3 from Child2")
+
+# Create instances of Child1 and Child2
+child1_instance = Child1()
+child2_instance = Child2()
+
+# Call methods from the base class and the derived classes
+child1_instance.method1()  # Calls Parent's method1
+child1_instance.method2()  # Calls Child1's method2
+child2_instance.method1()  # Calls Parent's method1
+child2_instance.method3()  # Calls Child2's method3
+.
+Method 1 from Parent
+Method 2 from Child1
+Method 1 from Parent
+Method 3 from Child2
+.
+https://www.javatpoint.com/types-of-inheritance-python
+.
+.
+.
+Python Classes/Objects 🙌
+Python is an object oriented programming language.
+Almost everything in Python is an object, with its properties and methods.
+A Class is like an object constructor, or a "blueprint" for creating objects.
+.
+overriding🙌
+# Parent class
+class Parent:
+    def show(self):
+        print("This is the Parent class")
+
+# Child class inheriting from Parent
+class Child(Parent):
+    def show(self):
+        print("This is the Child class")
+
+# Create instances of the classes
+parent = Parent()
+child = Child()
+
+# Call the show method on instances
+parent.show()  # This will print "This is the Parent class"
+child.show()   # This will print "This is the Child class"
